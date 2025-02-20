@@ -1,0 +1,8 @@
+xrpl-py>=2.0.0
+qiskit>=0.45.0  # For quantum computing capabilities
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+tensorflow>=2.15.0  # For advanced predictions
+web3>=6.0.0  # For blockchain interactions
+python-dotenv>=1.0.0
