@@ -1,4 +1,4 @@
-xrpl-py>=2.0.0
+xrpl-py>=2.0.0  # XRPL interaction
 qiskit>=0.45.0  # IBM Quantum Framework
 dwave-ocean-sdk>=6.0.0  # D-Wave Quantum Optimization
 pennylane>=0.32.0  # Quantum ML Framework
@@ -7,7 +7,9 @@ numpy>=1.24.0
 pandas>=2.0.0
 scikit-learn>=1.3.0
 tensorflow>=2.15.0  # For advanced predictions
-web3>=6.0.0  # For blockchain interactions
+web3>=6.0.0  # For EVM chain interactions
+aiohttp>=3.9.0  # For async HTTP requests
+eth-typing>=3.0.0  # For Ethereum type hints
 python-dotenv>=1.0.0
 qrl-core>=3.0.0  # Quantum Resistant Ledger integration
 cryptography>=41.0.0  # For quantum-safe encryption
