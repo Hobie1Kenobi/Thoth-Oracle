@@ -1,0 +1,6 @@
+dist
+docs
+dwave
+examples
+releasenotes
+tests

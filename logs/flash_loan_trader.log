@@ -1,0 +1,791 @@
+2025-02-20 13:52:12,357 - __main__ - INFO - Starting flash loan trading agent...
+2025-02-20 13:52:12,357 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:12,359 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:12,359 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:12,360 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:12,360 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:13,375 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:13,376 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:13,376 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:13,377 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:13,377 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:14,391 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:14,392 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:14,392 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:14,393 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:14,393 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:15,407 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:15,408 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:15,408 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:15,408 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:15,409 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:16,421 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:16,422 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:16,422 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:16,423 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:16,424 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:17,431 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:17,431 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:17,432 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:17,432 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:17,432 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:18,439 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:18,441 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:18,441 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:18,441 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:18,442 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:19,455 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:19,456 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:19,456 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:19,457 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:19,457 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:20,465 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:20,466 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:20,466 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:20,467 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:20,467 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:21,469 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:21,471 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:21,471 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:21,472 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:21,472 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:22,474 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:22,474 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:22,475 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:22,475 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:22,475 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:23,489 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:23,490 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:23,490 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:23,492 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:23,492 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:24,501 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:24,501 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:24,501 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:24,501 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:24,501 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:25,507 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:25,509 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:25,511 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:25,512 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:25,513 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:26,523 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:26,524 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:26,524 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:26,525 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:26,525 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:27,541 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:27,542 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:27,543 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:27,544 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:27,544 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:28,551 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:28,551 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:28,551 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:28,552 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:28,552 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:29,558 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:29,559 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:29,562 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:29,562 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:29,564 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:30,572 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:30,573 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:30,573 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:30,573 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:30,573 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:31,590 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:31,591 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:31,592 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:31,592 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:31,592 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:32,606 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:32,606 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:32,606 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:32,606 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:32,606 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:33,621 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:33,622 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:33,622 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:33,622 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:33,622 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:34,623 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:34,624 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:34,626 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:34,626 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:34,627 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:35,632 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:35,632 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:35,633 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:35,633 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:35,634 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:36,639 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:36,641 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:36,641 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:36,642 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:36,642 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:37,647 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:37,648 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:37,649 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:37,649 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:37,649 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:38,657 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:38,657 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:38,657 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:38,658 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:38,658 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:39,674 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:39,674 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:39,674 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:39,674 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:39,675 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:40,675 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:40,676 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:40,676 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:40,676 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:40,676 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:41,680 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:41,681 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:41,681 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:41,682 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:41,682 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:42,693 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:42,693 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:42,694 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:42,695 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:42,695 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:43,707 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:43,708 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:43,708 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:43,708 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:43,708 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:44,709 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:44,710 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:44,710 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:44,711 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:44,711 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:45,722 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:45,722 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:45,722 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:45,722 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:45,722 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:46,736 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:46,737 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:46,737 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:46,737 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:46,737 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:47,741 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:47,744 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:47,744 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:47,744 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:47,745 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:48,758 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:48,758 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:48,758 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:48,758 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:48,758 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:49,771 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:49,771 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:49,771 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:49,771 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:49,771 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:50,789 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:50,789 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:50,790 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:50,790 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:50,790 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:51,802 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:51,803 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:51,803 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:51,803 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:51,803 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:52,805 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:52,806 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:52,806 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:52,806 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:52,806 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:53,821 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:53,821 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:53,821 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:53,821 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:53,821 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:54,825 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:54,825 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:54,826 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:54,826 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:54,826 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:55,835 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:55,835 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:55,835 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:55,835 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:55,835 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:56,841 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:56,842 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:56,842 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:56,843 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:56,843 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:57,857 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:57,858 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:57,858 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:57,859 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:57,859 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:58,873 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:58,874 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:58,874 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:58,875 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:58,875 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:59,878 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:59,878 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:59,878 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:52:59,878 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:52:59,878 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:00,888 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:00,888 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:00,889 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:00,889 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:00,890 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:01,892 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:01,893 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:01,894 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:01,894 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:01,895 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:02,908 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:02,908 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:02,908 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:02,908 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:02,908 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:03,914 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:03,915 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:03,915 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:03,915 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:03,916 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:04,925 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:04,926 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:04,926 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:04,926 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:04,926 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:05,929 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:05,930 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:05,930 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:05,931 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:05,931 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:06,939 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:06,940 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:06,941 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:06,941 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:06,941 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:07,943 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:07,944 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:07,944 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:07,945 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:07,946 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:08,958 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:08,958 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:08,958 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:08,959 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:08,959 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:09,959 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:09,959 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:09,959 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:09,959 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:09,959 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:10,966 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:10,967 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:10,968 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:10,968 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:10,968 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:11,975 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:11,976 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:11,976 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:11,977 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:11,977 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:12,992 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:12,992 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:12,993 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:12,993 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:12,994 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:14,004 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:14,005 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:14,005 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:14,005 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:14,005 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:15,008 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:15,010 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:15,010 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:15,010 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:15,010 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:16,012 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:16,012 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:16,012 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:16,012 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:16,012 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:17,026 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:17,026 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:17,026 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:17,026 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:17,026 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:18,030 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:18,031 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:18,032 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:18,032 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:18,033 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:19,034 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:19,035 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:19,035 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:19,035 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:19,035 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:20,040 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:20,041 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:20,042 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:20,042 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:20,042 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:21,055 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:21,056 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:21,056 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:21,057 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:21,058 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:22,074 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:22,075 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:22,076 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:22,076 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:22,076 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:23,090 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:23,091 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:23,091 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:23,092 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:23,093 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:24,107 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:24,108 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:24,108 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:24,108 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:24,108 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:25,120 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:25,121 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:25,122 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:25,122 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:25,123 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:26,139 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:26,139 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:26,139 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:26,141 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:26,141 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:27,154 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:27,155 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:27,156 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:27,156 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:27,157 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:28,166 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:28,167 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:28,167 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:28,167 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:28,167 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:29,173 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:29,173 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:29,173 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:29,173 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:29,175 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:30,189 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:30,190 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:30,190 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:30,190 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:30,190 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:31,206 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:31,207 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:31,208 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:31,208 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:31,208 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:32,221 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:32,221 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:32,221 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 13:53:32,221 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 13:53:32,221 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:45,714 - __main__ - INFO - Starting flash loan trading agent...
+2025-02-20 14:00:45,714 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:45,714 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:45,714 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:45,714 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:45,716 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:46,724 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:46,725 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:46,725 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:46,726 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:46,726 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:47,727 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:47,727 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:47,727 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:47,728 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:47,728 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:48,740 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:48,740 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:48,740 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:48,740 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:48,742 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:49,743 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:49,743 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:49,744 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:49,744 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:49,744 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:50,750 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:50,750 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:50,751 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:50,751 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:50,752 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:51,758 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:51,758 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:51,759 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:51,759 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:51,759 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:52,775 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:52,775 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:52,776 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:52,777 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:52,778 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:53,787 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:53,788 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:53,788 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:53,789 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:53,789 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:54,790 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:54,791 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:54,791 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:54,792 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:54,793 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:55,810 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:55,810 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:55,810 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:55,810 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:55,811 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:56,825 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:56,825 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:56,826 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:56,826 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:56,826 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:57,827 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:57,828 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:57,828 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:57,828 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:57,828 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:58,843 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:58,844 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:58,844 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:58,844 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:58,844 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:59,859 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:59,859 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:59,861 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:00:59,861 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:00:59,861 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:01:00,874 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:01:00,875 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:01:00,875 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:01:00,875 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:01:00,875 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:01:01,878 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:01:01,878 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:01:01,878 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:01:01,878 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:01:01,878 - __main__ - ERROR - Error executing flash loan trade: unsupported operand type(s) for *: 'dict' and 'decimal.Decimal'
+2025-02-20 14:09:38,380 - __main__ - INFO - Starting flash loan trading agent...
+2025-02-20 14:09:40,251 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:41,294 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:42,203 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:43,268 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:44,512 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:45,320 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:45,325 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:09:45,325 - __main__ - ERROR - Flash loan trade failed: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:09:45,325 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:09:46,056 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:46,953 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:47,948 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:48,941 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:49,937 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:49,941 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:09:49,941 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:09:49,941 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:09:50,905 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:52,035 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:53,171 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:54,036 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:54,938 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:54,942 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:09:54,943 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:09:57,100 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:58,119 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:59,024 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:09:59,858 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:00,905 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:00,907 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:10:00,907 - __main__ - ERROR - Flash loan trade failed: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:10:00,908 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:10:01,984 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:02,771 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:03,530 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:04,552 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:05,636 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:05,638 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:10:05,638 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:10:05,638 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:10:06,661 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:07,533 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:08,180 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:09,176 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:10,249 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:10,249 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:10:10,249 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:10:12,071 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:12,805 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:13,556 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:14,680 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:15,800 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:15,800 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:10:15,800 - __main__ - ERROR - Flash loan trade failed: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:10:15,800 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:10:16,530 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:17,473 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:18,418 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:19,666 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:20,552 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:20,552 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:10:20,552 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:10:20,552 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:10:21,419 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:22,399 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:23,288 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:24,669 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:25,896 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:25,899 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:10:25,899 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:10:27,749 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:28,468 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:29,632 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:30,285 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:31,021 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:31,023 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:10:31,024 - __main__ - ERROR - Flash loan trade failed: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:10:31,025 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:10:31,880 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:33,180 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:34,169 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:35,449 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:36,471 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:36,471 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:10:36,471 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:10:36,471 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:10:37,479 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:38,521 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:39,300 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:40,205 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:41,285 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:41,288 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:10:41,288 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:10:43,521 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:44,580 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:45,671 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:46,725 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:47,935 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:47,937 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:10:47,938 - __main__ - ERROR - Flash loan trade failed: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:10:47,938 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:10:48,769 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:49,820 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:51,551 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:52,652 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:53,777 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:53,787 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:10:53,788 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:10:53,788 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:10:54,782 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:55,852 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:56,830 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:57,738 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:58,832 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:10:58,834 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:10:58,836 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:11:01,067 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:02,123 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:03,533 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:04,487 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:05,560 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:05,562 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:11:05,563 - __main__ - ERROR - Flash loan trade failed: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:11:05,564 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:11:06,380 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:07,162 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:08,172 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:09,199 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:10,238 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:10,241 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:11:10,241 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:11:10,241 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:11:11,105 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:11,850 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:12,917 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:13,930 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:14,619 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:14,623 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:11:14,623 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:11:16,480 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:17,384 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:18,484 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:19,550 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:20,630 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:20,630 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:11:20,630 - __main__ - ERROR - Flash loan trade failed: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:11:20,630 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:11:21,775 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:22,886 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:24,121 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:25,301 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:26,177 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:26,180 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:11:26,180 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:11:26,181 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:11:27,221 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:28,344 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:29,422 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:30,221 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:31,222 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:31,225 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:11:31,226 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:11:33,252 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:34,203 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:34,976 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:35,672 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:36,466 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:36,467 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:11:36,467 - __main__ - ERROR - Flash loan trade failed: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:11:36,468 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:11:37,505 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:38,523 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:39,603 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:40,669 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:41,521 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:41,525 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:11:41,525 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:11:41,525 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:11:42,637 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:43,637 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:44,827 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:45,950 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:46,920 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:46,922 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:11:46,922 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:11:48,800 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:49,830 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:50,919 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:51,759 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:52,469 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:52,471 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:11:52,472 - __main__ - ERROR - Flash loan trade failed: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:11:52,472 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:11:53,506 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:54,409 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:55,511 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:56,437 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:57,484 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:57,487 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:11:57,487 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:11:57,487 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:11:58,419 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:11:59,779 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:00,819 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:01,767 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:02,569 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:02,571 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:02,572 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:04,680 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:05,650 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:06,482 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:07,481 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:08,320 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:08,321 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:12:08,322 - __main__ - ERROR - Flash loan trade failed: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:12:08,323 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:12:09,571 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:10,243 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:10,946 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:11,983 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:13,280 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:13,291 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:13,291 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:13,291 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:12:14,360 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:15,381 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:16,400 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:17,447 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:18,492 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:18,493 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:18,494 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:20,149 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:21,479 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:22,751 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:23,900 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:24,989 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:24,992 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:12:24,992 - __main__ - ERROR - Flash loan trade failed: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:12:24,994 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:12:26,092 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:26,957 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:27,904 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:28,839 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:29,769 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:29,772 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:29,773 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:29,773 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:12:30,782 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:31,720 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:32,632 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:33,543 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:34,219 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:34,235 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:34,236 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:35,969 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:36,709 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:37,463 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:38,258 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:39,032 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:39,032 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:12:39,032 - __main__ - ERROR - Flash loan trade failed: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:12:39,032 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:12:39,690 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:40,500 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:41,215 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:41,903 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:42,656 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:42,660 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:42,660 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:42,661 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:12:43,395 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:44,266 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:45,022 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:45,855 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:46,609 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:46,622 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:46,622 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:48,150 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:48,892 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:49,683 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:50,591 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:51,419 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:51,421 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:12:51,421 - __main__ - ERROR - Flash loan trade failed: amount expected a typing.Union[xrpl.models.amounts.issued_currency_amount.IssuedCurrencyAmount, xrpl.models.amounts.mpt_amount.MPTAmount, str], received a <class 'dict'>
+2025-02-20 14:12:51,421 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:12:52,201 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:52,972 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:53,669 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:54,296 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:55,184 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:55,196 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:55,196 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:55,197 - __main__ - ERROR - Error executing flash loan trade: 'size'
+2025-02-20 14:12:55,844 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:56,631 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:57,327 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:58,041 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:58,729 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:12:58,732 - agents.flash_loan_agent.flash_loan_agent - ERROR - Error executing flash loan: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:12:58,732 - __main__ - ERROR - Flash loan trade failed: Error processing Amount: Invalid value to construct an AccountID: expected valid classic address or X-Address, received str.
+2025-02-20 14:13:00,466 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:13:01,231 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"
+2025-02-20 14:13:01,981 - httpx - INFO - HTTP Request: POST https://s.altnet.rippletest.net:51234 "HTTP/1.1 200 OK"

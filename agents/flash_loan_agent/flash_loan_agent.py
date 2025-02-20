@@ -1,215 +1,181 @@
 """
 Flash Loan Agent Module
-Handles flash loan operations and arbitrage opportunities on the XRPL.
 """
 
+import asyncio
 from decimal import Decimal
 from typing import Dict, Optional
 import logging
 from xrpl.clients import JsonRpcClient
-from xrpl.models import Payment, AccountInfo, BookOffers
 from xrpl.wallet import Wallet
-from xrpl.utils import xrp_to_drops
-from integrations.web3_client import Web3Client
-from integrations.across_bridge import AcrossBridgeClient
-from integrations.hooks_client import XRPLHooksClient
+from xrpl.models.requests import AccountInfo
+from xrpl.models.transactions import Payment
+from xrpl.asyncio.transaction import submit_and_wait
+from xrpl.asyncio.clients import AsyncJsonRpcClient
 
 logger = logging.getLogger(__name__)
 
 class FlashLoanAgent:
-    def __init__(
-        self,
-        web3_client: Optional[Web3Client] = None,
-        bridge_client: Optional[AcrossBridgeClient] = None,
-        hooks_client: Optional[XRPLHooksClient] = None
-    ):
+    def __init__(self, client: JsonRpcClient, wallet: Optional[Wallet] = None):
         """Initialize the Flash Loan Agent."""
-        self.web3_client = web3_client
-        self.bridge_client = bridge_client
-        self.hooks_client = hooks_client
-        
-    async def execute_flash_loan(
-        self,
-        token_address: str,
-        amount: Decimal,
-        target_chain: int
-    ) -> Dict:
-        """Execute a flash loan on XRPL."""
+        self.sync_client = client
+        self.client = AsyncJsonRpcClient(client.url)
+        self.wallet = wallet
+    
+    async def check_loan_availability(self, currency: str, amount: Decimal) -> Dict:
+        """Check if a flash loan is available for the given currency and amount."""
         try:
-            # Verify the hook account exists
-            if not self.hooks_client:
-                raise ValueError("Hooks client not initialized")
+            # Check if we have a wallet
+            if not self.wallet:
+                return {
+                    "available": False,
+                    "reason": "No wallet configured"
+                }
             
-            hook_info = await self.hooks_client.client.request(
+            # Check account info
+            account_info = await self.client.request(
                 AccountInfo(
-                    account=self.hooks_client.hook_account
+                    account=self.wallet.classic_address
                 )
             )
             
-            if not hook_info or "error" in hook_info.result:
-                raise ValueError(f"Hook account {self.hooks_client.hook_account} not found")
+            # Simple check - ensure account has enough XRP for fees
+            if Decimal(account_info.result["account_data"]["Balance"]) < Decimal("50"):
+                return {
+                    "available": False,
+                    "reason": "Insufficient XRP for fees"
+                }
             
-            # Check if there's enough liquidity
-            book_offers = await self.hooks_client.client.request(
-                BookOffers(
-                    taker_gets={"currency": "XRP"},
-                    taker_pays={
-                        "currency": token_address,
-                        "issuer": self.hooks_client.hook_account
-                    }
-                )
-            )
-            
-            if not book_offers.result.get("offers"):
-                raise ValueError("Insufficient liquidity in the pool")
-            
-            # Calculate optimal amount based on available liquidity
-            available_liquidity = Decimal(book_offers.result["offers"][0]["TakerGets"])
-            loan_amount = min(amount, available_liquidity)
-            
-            logger.info(f"Executing flash loan for {loan_amount} XRP")
-            
-            # Prepare flash loan parameters
-            flash_loan_params = {
-                "amount": str(loan_amount),
-                "token": token_address,
-                "target_chain": target_chain
+            return {
+                "available": True,
+                "max_amount": amount
             }
             
-            # Execute flash loan via hook
-            result = await self.hooks_client.execute_hook(
-                "flash_loan",
-                "borrow",
-                flash_loan_params
+        except Exception as e:
+            logger.error(f"Error checking loan availability: {e}")
+            return {
+                "available": False,
+                "reason": str(e)
+            }
+    
+    async def calculate_loan_fee(self, currency: str, amount: Decimal) -> Decimal:
+        """Calculate the fee for a flash loan."""
+        # Simple implementation - 0.1% fee
+        return amount * Decimal("0.001")
+    
+    async def execute_flash_loan(self, base_currency: str, quote_currency: str, issuer: str, amount: Decimal, target_rate: Decimal) -> Dict:
+        """Execute a flash loan trade."""
+        try:
+            if not self.wallet:
+                raise ValueError("Wallet required for flash loans")
+            
+            # Validate issuer address
+            if not issuer or len(issuer) < 25:  # Basic address length check
+                logger.error(f"Invalid issuer address: {issuer}")
+                return {
+                    "success": False,
+                    "error": "Invalid issuer address"
+                }
+            
+            # Calculate fee
+            fee = await self.calculate_loan_fee(base_currency, amount)
+            
+            # Handle XRP special case
+            if base_currency.upper() == "XRP":
+                loan_amount = str(int(amount * Decimal("1000000")))  # Convert to drops
+                repay_amount = str(int((amount + fee) * Decimal("1000000")))  # Convert to drops
+            else:
+                loan_amount = {
+                    "currency": base_currency.upper(),  # Ensure uppercase for currency code
+                    "value": str(amount),
+                    "issuer": issuer
+                }
+                repay_amount = {
+                    "currency": base_currency.upper(),  # Ensure uppercase for currency code
+                    "value": str(amount + fee),
+                    "issuer": issuer
+                }
+            
+            # Calculate send_max values (1% slippage tolerance)
+            if quote_currency.upper() == "XRP":
+                loan_send_max = str(int(amount * Decimal("1.01") * Decimal("1000000")))
+                repay_send_max = str(int((amount + fee) * Decimal("1.01") * Decimal("1000000")))
+            else:
+                loan_send_max = {
+                    "currency": quote_currency.upper(),  # Ensure uppercase for currency code
+                    "value": str(amount * Decimal("1.01")),
+                    "issuer": issuer
+                }
+                repay_send_max = {
+                    "currency": quote_currency.upper(),  # Ensure uppercase for currency code
+                    "value": str((amount + fee) * Decimal("1.01")),
+                    "issuer": issuer
+                }
+            
+            # Create flash loan payment with path finding
+            loan_payment = Payment(
+                account=self.wallet.classic_address,
+                destination=self.wallet.classic_address,  # Send to self
+                amount=loan_amount,
+                send_max=loan_send_max,
+                flags=131072  # tfNoDirectRipple flag
             )
             
-            if result.get("engine_result") == "tesSUCCESS":
-                # Calculate profit
-                fees = Decimal("0.001") * loan_amount  # 0.1% fee
-                profit = loan_amount - fees
-                
+            logger.info(f"Submitting loan payment: {loan_payment.to_dict()}")
+            
+            # Submit flash loan
+            loan_response = await submit_and_wait(
+                transaction=loan_payment,
+                client=self.client,
+                wallet=self.wallet
+            )
+            
+            if not loan_response.result.get("validated", False):
+                logger.error(f"Flash loan failed: {loan_response.result}")
                 return {
-                    "status": "success",
-                    "tx_hash": result["tx_hash"],
-                    "amount": str(loan_amount),
-                    "fees": str(fees),
+                    "success": False,
+                    "error": f"Flash loan failed: {loan_response.result}"
+                }
+            
+            logger.info(f"Flash loan successful: {loan_response.result['hash']}")
+            
+            # Execute the trade at target rate with path finding
+            repayment = Payment(
+                account=self.wallet.classic_address,
+                destination=self.wallet.classic_address,  # Send to self
+                amount=repay_amount,
+                send_max=repay_send_max,
+                flags=131072  # tfNoDirectRipple flag
+            )
+            
+            logger.info(f"Submitting repayment: {repayment.to_dict()}")
+            
+            # Submit repayment
+            repay_response = await submit_and_wait(
+                transaction=repayment,
+                client=self.client,
+                wallet=self.wallet
+            )
+            
+            if repay_response.result.get("validated", False):
+                profit = (amount * target_rate) - (amount + fee)
+                logger.info(f"Flash loan repaid successfully: {repay_response.result['hash']}")
+                return {
+                    "success": True,
+                    "loan_hash": loan_response.result["hash"],
+                    "repay_hash": repay_response.result["hash"],
                     "profit": str(profit)
                 }
             else:
-                logger.error(f"Flash loan failed: {result}")
+                logger.error(f"Repayment failed: {repay_response.result}")
                 return {
-                    "status": "failed",
-                    "error": result.get("engine_result_message", "Unknown error")
+                    "success": False,
+                    "error": f"Repayment failed: {repay_response.result}"
                 }
                 
         except Exception as e:
             logger.error(f"Error executing flash loan: {e}")
             return {
-                "status": "failed",
-                "error": str(e)
-            }
-    
-    async def check_profitability(
-        self,
-        token_address: str,
-        amount: Decimal,
-        expected_profit: Decimal
-    ) -> bool:
-        """Check if a flash loan would be profitable."""
-        try:
-            # Get current fees
-            fees = Decimal("0.001") * amount  # 0.1% fee
-            
-            # Get current market rates
-            book_offers = await self.hooks_client.client.request(
-                BookOffers(
-                    taker_gets={"currency": "XRP"},
-                    taker_pays={
-                        "currency": token_address,
-                        "issuer": self.hooks_client.hook_account
-                    }
-                )
-            )
-            
-            if not book_offers.result.get("offers"):
-                return False
-            
-            # Calculate potential profit
-            market_rate = Decimal(book_offers.result["offers"][0]["quality"])
-            potential_profit = (market_rate * amount) - amount - fees
-            
-            return potential_profit >= expected_profit
-            
-        except Exception as e:
-            logger.error(f"Error checking profitability: {e}")
-            return False
-    
-    async def monitor_pool_liquidity(self, token_address: str) -> Dict:
-        """Monitor liquidity in the flash loan pool."""
-        try:
-            book_offers = await self.hooks_client.client.request(
-                BookOffers(
-                    taker_gets={"currency": "XRP"},
-                    taker_pays={
-                        "currency": token_address,
-                        "issuer": self.hooks_client.hook_account
-                    }
-                )
-            )
-            
-            total_liquidity = sum(
-                Decimal(offer["TakerGets"])
-                for offer in book_offers.result.get("offers", [])
-            )
-            
-            return {
-                "token": token_address,
-                "total_liquidity": str(total_liquidity),
-                "num_offers": len(book_offers.result.get("offers", [])),
-                "timestamp": "now"
-            }
-            
-        except Exception as e:
-            logger.error(f"Error monitoring pool liquidity: {e}")
-            return {
-                "token": token_address,
-                "error": str(e)
-            }
-    
-    async def repay_flash_loan(
-        self,
-        token_address: str,
-        amount: Decimal,
-        loan_tx_hash: str
-    ) -> Dict:
-        """Repay a flash loan."""
-        try:
-            repay_params = {
-                "amount": str(amount),
-                "token": token_address,
-                "loan_tx_hash": loan_tx_hash
-            }
-            
-            result = await self.hooks_client.execute_hook(
-                "flash_loan",
-                "repay",
-                repay_params
-            )
-            
-            if result.get("engine_result") == "tesSUCCESS":
-                return {
-                    "status": "success",
-                    "tx_hash": result["tx_hash"]
-                }
-            else:
-                return {
-                    "status": "failed",
-                    "error": result.get("engine_result_message", "Unknown error")
-                }
-                
-        except Exception as e:
-            logger.error(f"Error repaying flash loan: {e}")
-            return {
-                "status": "failed",
+                "success": False,
                 "error": str(e)
             }

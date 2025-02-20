@@ -1,0 +1,2 @@
+Version: 1.8.2
+Arguments: ['C:\\Users\\circleci\\AppData\\Local\\Temp\\cibw-run-27y8s6lz\\cp312-win_amd64\\build\\venv\\Scripts\\delvewheel', 'repair', '-w', 'C:\\Users\\circleci\\AppData\\Local\\Temp\\cibw-run-27y8s6lz\\cp312-win_amd64\\repaired_wheel', 'C:\\Users\\circleci\\AppData\\Local\\Temp\\cibw-run-27y8s6lz\\cp312-win_amd64\\built_wheel\\dwave_samplers-1.4.0-cp312-cp312-win_amd64.whl', '--namespace-pkg', 'dwave']

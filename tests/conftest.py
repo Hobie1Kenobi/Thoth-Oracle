@@ -81,7 +81,7 @@ def pytest_configure(config: pytest.Config) -> None:
     config.addinivalue_line("markers", "bridge: mark test as cross-chain bridge related")
 
 @pytest.fixture
-def mock_quantum_circuit(mocker: pytest.MockFixture) -> None:
+def mock_quantum_circuit(mocker: pytest.FixtureRequest) -> None:
     """Mock quantum circuit execution."""
     mocker.patch("qiskit.execute", return_value=mocker.Mock(
         result=lambda: mocker.Mock(
@@ -90,7 +90,7 @@ def mock_quantum_circuit(mocker: pytest.MockFixture) -> None:
     ))
 
 @pytest.fixture
-def mock_dwave_sampler(mocker: pytest.MockFixture) -> None:
+def mock_dwave_sampler(mocker: pytest.FixtureRequest) -> None:
     """Mock D-Wave sampler."""
     mocker.patch("dwave.system.DWaveSampler", return_value=mocker.Mock(
         sample=lambda bqm, **kwargs: mocker.Mock(

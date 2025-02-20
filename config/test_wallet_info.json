@@ -1,0 +1,14 @@
+{
+    "spot_trading": {
+        "seed": "sEd7dKFyihsGJuCZKjqUJgedQiDHhy4",
+        "public_key": "EDD07D8E3FF70A2C51BBC892000715CD11A824CA8C64D59C33C451060FA08D17DD",
+        "private_key": "ED3749AB493E6656BA36460233704EA5286E1BFA74E8A8C5D3C1338BAB62024529",
+        "classic_address": "rG4mzN4LdjQUXgAvLbB2DQxD5aAq6jtZGx"
+    },
+    "flash_loan": {
+        "seed": "sEdSPJwYsi26i2a1tiLyik49RMrgGYe",
+        "public_key": "ED97086A978314ED38F940EE8AAD2D7FD90EBCD17CE7EEF5FAF5FAB50E7C318C88",
+        "private_key": "EDE289B3A0D31D67D99D556874A237BA9BD29EE08986B4FC8574EE1F0E83AFE880",
+        "classic_address": "rL721eQQexPb9EREChEjnoGCoetP7GzzKV"
+    }
+}

@@ -1,0 +1,9 @@
+xrpl-py
+web3
+aiohttp
+numpy
+pandas
+qiskit
+pytest
+pytest-asyncio
+pytest-cov

@@ -1,0 +1,2 @@
+Version: 1.9.0
+Arguments: ['C:\\Users\\circleci\\AppData\\Local\\Temp\\cibw-run-mtublg_a\\cp312-win_amd64\\build\\venv\\Scripts\\delvewheel', 'repair', '-w', 'C:\\Users\\circleci\\AppData\\Local\\Temp\\cibw-run-mtublg_a\\cp312-win_amd64\\repaired_wheel', 'C:\\Users\\circleci\\AppData\\Local\\Temp\\cibw-run-mtublg_a\\cp312-win_amd64\\built_wheel\\dwave_optimization-0.4.2-cp312-cp312-win_amd64.whl', '--namespace-pkg', 'dwave']

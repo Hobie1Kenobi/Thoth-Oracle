@@ -1,0 +1,8 @@
+dash==2.14.1
+dash-bootstrap-components==1.5.0
+plotly==5.18.0
+pandas==2.1.4
+numpy==1.26.2
+websockets>=10.0,<11.0
+xrpl-py==2.4.0
+python-dateutil==2.8.2

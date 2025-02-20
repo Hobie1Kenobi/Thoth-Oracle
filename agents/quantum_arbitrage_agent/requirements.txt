@@ -1,0 +1,5 @@
+pennylane>=0.30.0
+pennylane-qiskit>=0.28.0
+numpy>=1.21.0
+xrpl-py>=2.0.0
+python-dotenv>=1.0.0
