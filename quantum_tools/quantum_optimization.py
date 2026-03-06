@@ -4,12 +4,12 @@ Implements quantum algorithms for portfolio and strategy optimization.
 """
 
 import numpy as np
-from qiskit import QuantumCircuit, execute, Aer
-from qiskit.algorithms import QAOA
+from qiskit import QuantumCircuit
+from qiskit_aer import AerSimulator
 
 class QuantumOptimizer:
-    def __init__(self):
-        self.backend = Aer.get_backend('qasm_simulator')
+    def __init__(self, backend=None):
+        self.backend = backend or AerSimulator()
         
     def optimize_portfolio(self, assets, constraints):
         """Optimize portfolio allocation using quantum algorithms."""

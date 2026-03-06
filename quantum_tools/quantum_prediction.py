@@ -4,11 +4,12 @@ Implements quantum computing algorithms for market predictions.
 """
 
 import numpy as np
-from qiskit import QuantumCircuit, execute, Aer
+from qiskit import QuantumCircuit
+from qiskit_aer import AerSimulator
 
 class QuantumPredictor:
-    def __init__(self):
-        self.backend = Aer.get_backend('qasm_simulator')
+    def __init__(self, backend=None):
+        self.backend = backend or AerSimulator()
         
     def create_quantum_circuit(self, data_points):
         """Create quantum circuit based on input data."""
