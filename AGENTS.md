@@ -18,7 +18,7 @@ The checked-in `venv/` directory (Windows-built) is **not usable** on Linux — 
 
 ### Dependency version constraints
 
-- **Qiskit**: Must use `qiskit==0.46.3` (not 1.x or 2.x). The codebase uses deprecated APIs (`from qiskit import execute, Aer`) that were removed in Qiskit 1.0+. If `qiskit` is accidentally upgraded, clean reinstall is required: uninstall qiskit/qiskit-terra/qiskit-aer, delete residual `site-packages/qiskit/` directory, then reinstall `qiskit==0.46.3 qiskit-aer==0.13.3`.
+- **Qiskit**: Uses `qiskit>=2.0` + `qiskit-aer` + `qiskit-ibm-runtime>=0.30`. Circuits use `AerSimulator` (not deprecated `Aer`) and `SamplerV2` for IBM hardware.
 - **pytest**: Must use `pytest<9` to avoid async fixture breakage with `pytest-asyncio`.
 - **xrpl-py**: Version 2.4.0 is installed. One test file (`test_security_and_robustness.py`) imports `XRPLRequestFailureException` which does not exist — this is a pre-existing repo issue.
 - **dashboard/requirements.txt**: Pins older versions that conflict with root `requirements.txt`. Install root requirements last to maintain correct versions for tests.
@@ -131,7 +131,6 @@ This connects to XRPL testnet, scans order books every 1s, and detects direct + 
 - `SpotTradingAgent` has a pre-existing import bug: uses `xrpl.utils.get_issuer_address` (doesn't exist); should use `config.exchange_issuers.get_issuer_address`.
 - `pennylane-qiskit` forces qiskit 2.x which breaks the codebase. Install `pennylane` without `pennylane-qiskit` to keep qiskit 0.46.3 working.
 - D-Wave optimizer requires `DWAVE_API_TOKEN` env var for real quantum annealing. Use `dimod.SimulatedAnnealingSampler()` as a local substitute.
-- `examples/quantum_prediction.py` uses `circuit.u3()` which was removed in qiskit 0.46.x. Patch with `QuantumCircuit.u3 = QuantumCircuit.u` before importing.
-- **IBM Quantum** is configured and connected. Set `IBM_QUANTUM_CRN` and `IBMQ_API_TOKEN` in `.env` (or as secrets). Connection uses `qiskit-ibm-runtime==0.17.0` + `qiskit-ibm-provider` (installed with `--no-deps` to avoid qiskit version conflicts). Available backends: **ibm_fez** (156q), **ibm_marrakesh** (156q), **ibm_torino** (133q). However, IBM now requires Primitives V2 for circuit execution, which needs `qiskit-ibm-runtime >= 0.22` → `qiskit >= 1.0`. To run on real hardware, upgrade qiskit to 1.x and refactor `execute()` calls to use `SamplerV2`. Until then, all quantum strategies run on the local Aer simulator.
+- **IBM Quantum** is configured and connected. Set `IBM_QUANTUM_CRN` and `IBMQ_API_TOKEN` in `.env` (or as secrets). Use `quantum_tools.ibm_backend.get_backend()` to get a hardware backend. Available: **ibm_fez** (156q), **ibm_marrakesh** (156q), **ibm_torino** (133q). Training uses local AerSimulator for speed; predictions run on IBM hardware via SamplerV2.
 - The Dash dashboard (`dashboard/run_dashboard.py`) requires a live XRPL testnet connection.
 - No Docker, Makefile, or devcontainer configs exist — setup is purely pip-based.
