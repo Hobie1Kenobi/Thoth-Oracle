@@ -130,6 +130,8 @@ This connects to XRPL testnet, scans order books every 1s, and detects direct + 
 - All agent methods are **async** — must be called with `await` inside `asyncio.run()`.
 - `SpotTradingAgent` has a pre-existing import bug: uses `xrpl.utils.get_issuer_address` (doesn't exist); should use `config.exchange_issuers.get_issuer_address`.
 - `pennylane-qiskit` forces qiskit 2.x which breaks the codebase. Install `pennylane` without `pennylane-qiskit` to keep qiskit 0.46.3 working.
-- D-Wave optimizer requires `DWAVE_API_TOKEN` env var for real quantum annealing.
+- D-Wave optimizer requires `DWAVE_API_TOKEN` env var for real quantum annealing. Use `dimod.SimulatedAnnealingSampler()` as a local substitute.
+- `examples/quantum_prediction.py` uses `circuit.u3()` which was removed in qiskit 0.46.x. Patch with `QuantumCircuit.u3 = QuantumCircuit.u` before importing.
+- IBM Quantum cloud requires both a CRN (instance identifier) **and** an API token. Set `IBM_QUANTUM_CRN` and `IBMQ_API_TOKEN` in `.env`. Note: `qiskit-ibm-runtime` requires qiskit >= 1.0 which conflicts with this codebase; cloud backends are not usable with qiskit 0.46.3 without significant refactoring.
 - The Dash dashboard (`dashboard/run_dashboard.py`) requires a live XRPL testnet connection.
 - No Docker, Makefile, or devcontainer configs exist — setup is purely pip-based.
