@@ -14,6 +14,7 @@ from typing import Dict, Optional
 from xrpl.clients import JsonRpcClient
 from xrpl.wallet import Wallet
 from config.test_wallets import TESTNET_URL, FLASH_LOAN_WALLET
+from config.exchange_issuers import get_issuer_address
 from agents.flash_loan_agent import FlashLoanAgent
 from agents.xrpl_amm_agent import XRPLAMMAgent
 from agents.risk_management_agent import RiskManagementAgent
@@ -53,73 +54,72 @@ class FlashLoanTradingAgent:
     async def execute_flash_loan_trade(self, opportunity: Dict) -> bool:
         """Execute a flash loan trade based on an arbitrage opportunity."""
         try:
-            # Validate opportunity
-            if float(opportunity["details"]["profit_percentage"]) < float(self.min_profit_threshold):
-                logger.info(f"Profit {opportunity['details']['profit_percentage']}% below threshold {self.min_profit_threshold}%")
+            opp = opportunity.get("details", opportunity)
+
+            if float(opp["profit_percentage"]) < float(self.min_profit_threshold):
+                logger.info(f"Profit {opp['profit_percentage']}% below threshold {self.min_profit_threshold}%")
                 return False
             
-            # Calculate loan size
             loan_size = min(
-                Decimal(str(opportunity["details"]["size"])),
+                Decimal(str(opp["size"])),
                 self.max_loan_size
             )
             
-            # Check loan availability
+            base_currency = opp.get("base_currency", opp.get("pair", "XRP/USD").split("/")[0])
+            quote_currency = opp.get("quote_currency", opp.get("pair", "XRP/USD").split("/")[1])
+            
             loan_check = await self.flash_loan_agent.check_loan_availability(
-                opportunity["details"]["base_currency"],
-                loan_size
+                base_currency, loan_size
             )
             
             if not loan_check["available"]:
-                logger.info(f"Flash loan not available: {loan_check['reason']}")
+                logger.info(f"Flash loan not available: {loan_check.get('reason', 'unknown')}")
                 return False
             
-            # Calculate fees
             loan_fee = await self.flash_loan_agent.calculate_loan_fee(
-                opportunity["details"]["base_currency"],
-                loan_size
+                base_currency, loan_size
             )
             
-            # Check if profitable after fees
-            expected_profit = Decimal(str(opportunity["details"]["profit"]))
-            total_fees = loan_fee * self.gas_buffer  # Add buffer for gas costs
+            expected_profit = Decimal(str(opp["profit"]))
+            total_fees = loan_fee * self.gas_buffer
             
             if expected_profit <= total_fees:
                 logger.info(f"Not profitable after fees. Profit: {expected_profit}, Fees: {total_fees}")
                 return False
             
+            buy_exchange = opp.get("buy_exchange", "")
+            try:
+                issuer_address = get_issuer_address(buy_exchange)
+            except ValueError:
+                issuer_address = buy_exchange
+            
             start_time = datetime.now()
             
-            # Execute flash loan trade
             result = await self.flash_loan_agent.execute_flash_loan(
-                base_currency=opportunity["details"]["base_currency"],
-                quote_currency=opportunity["details"]["quote_currency"],
-                issuer=opportunity["details"]["buy_exchange"],
+                base_currency=base_currency,
+                quote_currency=quote_currency,
+                issuer=issuer_address,
                 amount=loan_size,
-                target_rate=Decimal(str(opportunity["details"]["sell_rate"]))
+                target_rate=Decimal(str(opp.get("sell_rate", "1")))
             )
             
             if not result["success"]:
                 logger.error(f"Flash loan trade failed: {result['error']}")
                 return False
             
-            # Calculate actual profit
             end_time = datetime.now()
             execution_time = (end_time - start_time).total_seconds()
-            actual_profit = result["profit"]
+            actual_profit = Decimal(str(result.get("profit", "0")))
             
-            # Log trade
             self.loans_executed += 1
             self.total_profit += actual_profit
             
-            self.monitoring_agent.log_trade(
-                opportunity["details"]["pair"],
-                loan_size,
-                actual_profit,
-                execution_time
+            pair = opp.get("pair", f"{base_currency}/{quote_currency}")
+            await self.monitoring_agent.log_trade(
+                pair, loan_size, actual_profit, execution_time
             )
             
-            logger.info(f"Flash loan trade executed successfully! Profit: {actual_profit} {opportunity['details']['quote_currency']}")
+            logger.info(f"Flash loan trade executed! Profit: {actual_profit} {quote_currency}")
             return True
             
         except Exception as e:

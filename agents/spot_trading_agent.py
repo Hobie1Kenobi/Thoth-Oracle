@@ -15,7 +15,7 @@ from datetime import datetime
 from xrpl.clients import JsonRpcClient
 from xrpl.wallet import Wallet
 from xrpl.models.requests import BookOffers, AccountLines
-from xrpl.utils import get_issuer_address
+from config.exchange_issuers import get_issuer_address
 from agents.xrpl_amm_agent import XRPLAMMAgent
 from config.test_wallets import TESTNET_URL, SPOT_TRADER_WALLET
 
@@ -54,9 +54,8 @@ class SpotTradingAgent:
     def calculate_risk_score(self, opportunity: Dict) -> float:
         """Calculate risk score for an opportunity using multiple factors."""
         try:
-            details = opportunity["details"]
+            details = opportunity.get("details", opportunity)
             
-            # Extract key metrics
             profit_percentage = Decimal(details["profit_percentage"])
             size = Decimal(details["size"])
             
@@ -106,7 +105,7 @@ class SpotTradingAgent:
     async def analyze_opportunity(self, opportunity: Dict) -> Dict:
         """Analyze an arbitrage opportunity in detail."""
         try:
-            details = opportunity["details"]
+            details = opportunity.get("details", opportunity)
             pair = details["pair"].split("/")
             base_currency = pair[0]
             quote_currency = pair[1]
@@ -191,7 +190,7 @@ class SpotTradingAgent:
     async def execute_trade(self, opportunity: Dict) -> bool:
         """Execute a trade based on an arbitrage opportunity."""
         try:
-            details = opportunity["details"]
+            details = opportunity.get("details", opportunity)
             pair = details["pair"].split("/")
             base_currency = pair[0]
             quote_currency = pair[1]
