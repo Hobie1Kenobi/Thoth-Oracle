@@ -1,0 +1,25 @@
+{
+  "xrpl_evm": {
+    "rpc": "https://rpc.testnet.xrplevm.org",
+    "chain_id": 1449000,
+    "explorer": "https://explorer.testnet.xrplevm.org",
+    "faucet": "https://faucet.xrplevm.org"
+  },
+  "sepolia": {
+    "rpc": "https://ethereum-sepolia-rpc.publicnode.com",
+    "chain_id": 11155111,
+    "explorer": "https://sepolia.etherscan.io",
+    "uniswap_v3": {
+      "factory": "0x1F98431c8aD98523631AE4a59f267346ea31F984",
+      "swap_router": "0xd1AAE39293221B77B0C71fBD6dCb7Ea29Bb5B166",
+      "quoter_v2": "0x6Dd37329A1A225a6Fca658265D460423DCafBF89"
+    }
+  },
+  "axelar": {
+    "its_address": "0xB5FB4BE02232B1bBA4dC8f81dc24C26980dE9e3C"
+  },
+  "wallet": {
+    "address": "0x97d6FD76D509c599b2ED8856100DeA09aeEa1484",
+    "private_key": "8393b1d24295863feea43e213ca8b19206f82a7ee67a1ed54d4dbe63c8353812"
+  }
+}

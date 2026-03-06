@@ -22,15 +22,18 @@ from agents.risk_management_agent import RiskManagementAgent
 from agents.monitoring_agent import MonitoringAgent
 
 # Configure logging
+os.makedirs("logs", exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler('arbitrage_opportunities.log')
+        logging.FileHandler('logs/arbitrage_trader.log')
     ]
 )
 logger = logging.getLogger(__name__)
+
+import json
 
 # Common issuers
 ISSUERS = {
@@ -131,16 +134,21 @@ class ArbitrageTrader:
         return pairs
 
     def log_opportunity(self, type: str, details: Dict):
-        """Log an arbitrage opportunity."""
+        """Log an arbitrage opportunity as JSON to logs/arbitrage_opportunities.log."""
         timestamp = datetime.now().isoformat()
         opportunity = {
             "timestamp": timestamp,
             "type": type,
-            **details
+            "details": details
         }
         self.opportunities.append(opportunity)
         
-        # Update analytics
+        try:
+            with open("logs/arbitrage_opportunities.log", "a") as f:
+                f.write(json.dumps(opportunity) + "\n")
+        except Exception as e:
+            logger.error(f"Failed to write opportunity to log: {e}")
+        
         stats = self.opportunity_stats[type]
         profit_percentage = Decimal(details["profit_percentage"])
         
@@ -156,7 +164,6 @@ class ArbitrageTrader:
                 stats["most_profitable_path"] = details["path"]
                 stats["best_exchange"] = details["exchanges"]
         
-        # Enhanced logging
         if type == "direct":
             logger.info(
                 f"\n{'='*50}\n"

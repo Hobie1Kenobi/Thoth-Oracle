@@ -8,7 +8,7 @@ from typing import Dict, Optional
 import logging
 from xrpl.clients import JsonRpcClient
 from xrpl.wallet import Wallet
-from xrpl.models.requests import AccountInfo
+from xrpl.models.requests import AccountInfo, RipplePathFind
 from xrpl.models.transactions import Payment
 from xrpl.asyncio.transaction import submit_and_wait
 from xrpl.asyncio.clients import AsyncJsonRpcClient
@@ -63,67 +63,88 @@ class FlashLoanAgent:
         # Simple implementation - 0.1% fee
         return amount * Decimal("0.001")
     
+    async def find_paths(self, currency: str, issuer: str, amount: Decimal):
+        """Find payment paths for IOU trades."""
+        try:
+            if currency.upper() == "XRP":
+                dest_amount = str(int(amount * Decimal("1000000")))
+            else:
+                dest_amount = {
+                    "currency": currency.upper(),
+                    "value": str(amount),
+                    "issuer": issuer
+                }
+            
+            paths_req = RipplePathFind(
+                source_account=self.wallet.classic_address,
+                destination_account=self.wallet.classic_address,
+                destination_amount=dest_amount
+            )
+            
+            result = await self.client.request(paths_req)
+            if result.is_successful():
+                return result.result.get("alternatives", [])
+            return []
+        except Exception as e:
+            logger.error(f"Error finding paths: {e}")
+            return []
+
     async def execute_flash_loan(self, base_currency: str, quote_currency: str, issuer: str, amount: Decimal, target_rate: Decimal) -> Dict:
-        """Execute a flash loan trade."""
+        """Execute a flash loan trade with path finding."""
         try:
             if not self.wallet:
                 raise ValueError("Wallet required for flash loans")
             
-            # Validate issuer address
-            if not issuer or len(issuer) < 25:  # Basic address length check
+            if not issuer or len(issuer) < 25:
                 logger.error(f"Invalid issuer address: {issuer}")
-                return {
-                    "success": False,
-                    "error": "Invalid issuer address"
-                }
+                return {"success": False, "error": "Invalid issuer address"}
             
-            # Calculate fee
             fee = await self.calculate_loan_fee(base_currency, amount)
             
-            # Handle XRP special case
             if base_currency.upper() == "XRP":
-                loan_amount = str(int(amount * Decimal("1000000")))  # Convert to drops
-                repay_amount = str(int((amount + fee) * Decimal("1000000")))  # Convert to drops
+                loan_amount = str(int(amount * Decimal("1000000")))
+                repay_amount = str(int((amount + fee) * Decimal("1000000")))
             else:
                 loan_amount = {
-                    "currency": base_currency.upper(),  # Ensure uppercase for currency code
+                    "currency": base_currency.upper(),
                     "value": str(amount),
                     "issuer": issuer
                 }
                 repay_amount = {
-                    "currency": base_currency.upper(),  # Ensure uppercase for currency code
+                    "currency": base_currency.upper(),
                     "value": str(amount + fee),
                     "issuer": issuer
                 }
             
-            # Calculate send_max values (1% slippage tolerance)
             if quote_currency.upper() == "XRP":
                 loan_send_max = str(int(amount * Decimal("1.01") * Decimal("1000000")))
                 repay_send_max = str(int((amount + fee) * Decimal("1.01") * Decimal("1000000")))
             else:
                 loan_send_max = {
-                    "currency": quote_currency.upper(),  # Ensure uppercase for currency code
+                    "currency": quote_currency.upper(),
                     "value": str(amount * Decimal("1.01")),
                     "issuer": issuer
                 }
                 repay_send_max = {
-                    "currency": quote_currency.upper(),  # Ensure uppercase for currency code
+                    "currency": quote_currency.upper(),
                     "value": str((amount + fee) * Decimal("1.01")),
                     "issuer": issuer
                 }
             
-            # Create flash loan payment with path finding
+            paths = await self.find_paths(base_currency, issuer, amount)
+            path_data = paths[0]["paths_computed"] if paths else None
+            
             loan_payment = Payment(
                 account=self.wallet.classic_address,
-                destination=self.wallet.classic_address,  # Send to self
+                destination=self.wallet.classic_address,
                 amount=loan_amount,
                 send_max=loan_send_max,
-                flags=131072  # tfNoDirectRipple flag
+                paths=path_data,
+                flags=131072
             )
             
             logger.info(f"Submitting loan payment: {loan_payment.to_dict()}")
             
-            # Submit flash loan
             loan_response = await submit_and_wait(
                 transaction=loan_payment,
                 client=self.client,
@@ -132,25 +153,24 @@ class FlashLoanAgent:
             
             if not loan_response.result.get("validated", False):
                 logger.error(f"Flash loan failed: {loan_response.result}")
-                return {
-                    "success": False,
-                    "error": f"Flash loan failed: {loan_response.result}"
-                }
+                return {"success": False, "error": f"Flash loan failed: {loan_response.result}"}
             
             logger.info(f"Flash loan successful: {loan_response.result['hash']}")
             
-            # Execute the trade at target rate with path finding
+            repay_paths = await self.find_paths(base_currency, issuer, amount + fee)
+            repay_path_data = repay_paths[0]["paths_computed"] if repay_paths else None
+            
             repayment = Payment(
                 account=self.wallet.classic_address,
-                destination=self.wallet.classic_address,  # Send to self
+                destination=self.wallet.classic_address,
                 amount=repay_amount,
                 send_max=repay_send_max,
-                flags=131072  # tfNoDirectRipple flag
+                paths=repay_path_data,
+                flags=131072
             )
             
             logger.info(f"Submitting repayment: {repayment.to_dict()}")
             
-            # Submit repayment
             repay_response = await submit_and_wait(
                 transaction=repayment,
                 client=self.client,
@@ -159,7 +179,7 @@ class FlashLoanAgent:
             
             if repay_response.result.get("validated", False):
                 profit = (amount * target_rate) - (amount + fee)
-                logger.info(f"Flash loan repaid successfully: {repay_response.result['hash']}")
+                logger.info(f"Flash loan repaid: {repay_response.result['hash']}")
                 return {
                     "success": True,
                     "loan_hash": loan_response.result["hash"],
@@ -168,14 +188,8 @@ class FlashLoanAgent:
                 }
             else:
                 logger.error(f"Repayment failed: {repay_response.result}")
-                return {
-                    "success": False,
-                    "error": f"Repayment failed: {repay_response.result}"
-                }
+                return {"success": False, "error": f"Repayment failed: {repay_response.result}"}
                 
         except Exception as e:
             logger.error(f"Error executing flash loan: {e}")
-            return {
-                "success": False,
-                "error": str(e)
-            }
+            return {"success": False, "error": str(e)}

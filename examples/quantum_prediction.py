@@ -3,26 +3,33 @@
 import asyncio
 import numpy as np
 from typing import List, Dict, Optional
-from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister, execute, Aer
-from qiskit.algorithms.optimizers import SPSA
+from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister
 from qiskit.circuit import Parameter
-from qiskit.quantum_info import state_fidelity
+from qiskit_aer import AerSimulator
+
+def run_circuit(circuit, backend=None, shots=1000):
+    """Run a quantum circuit on either local Aer or IBM Quantum hardware."""
+    if backend is None:
+        backend = AerSimulator()
+
+    if isinstance(backend, AerSimulator):
+        result = backend.run(circuit, shots=shots).result()
+        return result.get_counts()
+
+    from quantum_tools.ibm_backend import run_on_hardware
+    return run_on_hardware(circuit, backend, shots)
 
 class QuantumPricePredictor:
     """Quantum circuit-based price prediction model."""
     
-    def __init__(self, n_qubits: int = 4, n_layers: int = 2):
-        """Initialize quantum predictor.
-        
-        Args:
-            n_qubits: Number of qubits to use
-            n_layers: Number of variational layers
-        """
+    def __init__(self, n_qubits: int = 4, n_layers: int = 2, backend=None):
         self.n_qubits = n_qubits
         self.n_layers = n_layers
         self.parameters = []
+        self.backend = backend or AerSimulator()
+        self.local_backend = AerSimulator()
         self.circuit = self._create_variational_circuit()
-        self.optimizer = SPSA(maxiter=100)
+        self.optimal_params = None
         
     def _create_variational_circuit(self) -> QuantumCircuit:
         """Create a variational quantum circuit for price prediction."""
@@ -30,89 +37,69 @@ class QuantumPricePredictor:
         cr = ClassicalRegister(self.n_qubits, 'c')
         circuit = QuantumCircuit(qr, cr)
         
-        # Initial superposition
         circuit.h(range(self.n_qubits))
         
-        # Variational layers
         for layer in range(self.n_layers):
             for qubit in range(self.n_qubits):
-                # Rotation gates with parameters
                 theta = Parameter(f'θ_{layer}_{qubit}')
                 phi = Parameter(f'φ_{layer}_{qubit}')
                 lambda_ = Parameter(f'λ_{layer}_{qubit}')
                 
-                circuit.u3(theta, phi, lambda_, qubit)
+                circuit.u(theta, phi, lambda_, qubit)
                 self.parameters.extend([theta, phi, lambda_])
             
-            # Entanglement
             for qubit in range(self.n_qubits - 1):
                 circuit.cx(qubit, qubit + 1)
             circuit.cx(self.n_qubits - 1, 0)
         
-        # Measurement
         circuit.measure(qr, cr)
         return circuit
     
     async def train(self, price_data: List[float]) -> None:
-        """Train the quantum circuit on historical price data.
-        
-        Args:
-            price_data: List of historical prices
-        """
-        # Normalize price data
+        """Train the quantum circuit on historical price data. Uses local simulator for speed."""
         normalized_data = np.array(price_data) / np.max(np.abs(price_data))
         
-        # Define cost function
         def cost_function(params):
-            bound_circuit = self.circuit.bind_parameters(params)
-            job = execute(bound_circuit, Aer.get_backend('qasm_simulator'), shots=1000)
-            counts = job.result().get_counts()
+            bound_circuit = self.circuit.assign_parameters(
+                dict(zip(self.parameters, params))
+            )
+            counts = run_circuit(bound_circuit, self.local_backend, shots=1000)
             
-            # Convert measurement outcomes to predicted values
             predicted = sum(int(state, 2) * count for state, count in counts.items()) / 1000
-            predicted = predicted / (2**self.n_qubits)  # Normalize
+            predicted = predicted / (2**self.n_qubits)
             
-            # Mean squared error
             target = normalized_data[-1]
             return (predicted - target) ** 2
         
-        # Optimize parameters
         initial_params = np.random.rand(len(self.parameters)) * 2 * np.pi
-        optimal_params = await asyncio.to_thread(
-            self.optimizer.optimize,
-            len(self.parameters),
-            cost_function,
-            initial_point=initial_params
-        )
         
-        # Update circuit with optimal parameters
-        self.optimal_params = optimal_params[0]
+        best_params = initial_params
+        best_cost = cost_function(initial_params)
+        
+        for iteration in range(100):
+            perturbation = np.random.randn(len(self.parameters)) * 0.1
+            candidate = best_params + perturbation
+            candidate_cost = cost_function(candidate)
+            if candidate_cost < best_cost:
+                best_params = candidate
+                best_cost = candidate_cost
+        
+        self.optimal_params = best_params
     
     async def predict_price(self, window_size: int = 10) -> Optional[float]:
-        """Predict next price using quantum circuit.
-        
-        Args:
-            window_size: Number of predictions to average
-            
-        Returns:
-            Predicted price
-        """
+        """Predict next price using quantum circuit."""
         try:
-            # Bind optimal parameters
-            bound_circuit = self.circuit.bind_parameters(self.optimal_params)
+            bound_circuit = self.circuit.assign_parameters(
+                dict(zip(self.parameters, self.optimal_params))
+            )
             
-            # Run multiple predictions
             predictions = []
             for _ in range(window_size):
-                job = execute(bound_circuit, Aer.get_backend('qasm_simulator'), shots=1000)
-                counts = job.result().get_counts()
-                
-                # Convert to prediction
+                counts = run_circuit(bound_circuit, self.backend, shots=1000)
                 predicted = sum(int(state, 2) * count for state, count in counts.items()) / 1000
                 predicted = predicted / (2**self.n_qubits)
                 predictions.append(predicted)
             
-            # Average predictions
             return np.mean(predictions)
             
         except Exception as e:
@@ -122,18 +109,13 @@ class QuantumPricePredictor:
 class QuantumArbitrageDetector:
     """Quantum algorithm for detecting arbitrage opportunities."""
     
-    def __init__(self, n_markets: int):
-        """Initialize quantum arbitrage detector.
-        
-        Args:
-            n_markets: Number of markets to analyze
-        """
+    def __init__(self, n_markets: int, backend=None):
         self.n_markets = n_markets
         self.n_qubits = self._calculate_required_qubits()
+        self.backend = backend or AerSimulator()
         self.circuit = self._create_grover_circuit()
     
     def _calculate_required_qubits(self) -> int:
-        """Calculate number of qubits needed based on markets."""
         return int(np.ceil(np.log2(self.n_markets))) + 1
     
     def _create_grover_circuit(self) -> QuantumCircuit:
@@ -142,24 +124,18 @@ class QuantumArbitrageDetector:
         cr = ClassicalRegister(self.n_qubits, 'c')
         circuit = QuantumCircuit(qr, cr)
         
-        # Initialize superposition
         circuit.h(range(self.n_qubits - 1))
         circuit.x(self.n_qubits - 1)
         circuit.h(self.n_qubits - 1)
         
-        # Oracle implementation would go here
-        # This is a placeholder for the actual oracle
-        
-        # Grover diffusion operator
         circuit.h(range(self.n_qubits - 1))
         circuit.x(range(self.n_qubits - 1))
         circuit.h(self.n_qubits - 1)
-        circuit.mct(list(range(self.n_qubits - 1)), self.n_qubits - 1)
+        circuit.mcx(list(range(self.n_qubits - 1)), self.n_qubits - 1)
         circuit.h(self.n_qubits - 1)
         circuit.x(range(self.n_qubits - 1))
         circuit.h(range(self.n_qubits - 1))
         
-        # Measurement
         circuit.measure(qr, cr)
         return circuit
     
@@ -168,29 +144,16 @@ class QuantumArbitrageDetector:
         price_matrix: List[List[float]],
         threshold: float = 0.01
     ) -> List[Dict]:
-        """Detect arbitrage opportunities using quantum algorithm.
-        
-        Args:
-            price_matrix: Matrix of exchange rates between markets
-            threshold: Minimum profit threshold
-            
-        Returns:
-            List of detected arbitrage opportunities
-        """
+        """Detect arbitrage opportunities using quantum algorithm."""
         opportunities = []
         
         try:
-            # Execute quantum circuit
-            job = execute(self.circuit, Aer.get_backend('qasm_simulator'), shots=1000)
-            counts = job.result().get_counts()
+            counts = run_circuit(self.circuit, self.backend, shots=1000)
             
-            # Analyze results
             for state, count in counts.items():
-                if count > 100:  # 10% threshold for significant results
-                    # Convert state to market path
+                if count > 100:
                     path = [int(x) for x in state[:-1]]
                     
-                    # Calculate potential profit
                     profit = 1.0
                     for i in range(len(path) - 1):
                         profit *= price_matrix[path[i]][path[i + 1]]
@@ -211,10 +174,8 @@ class QuantumArbitrageDetector:
 
 async def main():
     """Main execution function."""
-    # Example usage of quantum price prediction
     predictor = QuantumPricePredictor(n_qubits=4, n_layers=3)
     
-    # Sample historical price data
     historical_prices = [100, 102, 98, 103, 105, 104, 107, 106, 108, 110]
     
     print("Training quantum price predictor...")
@@ -225,10 +186,8 @@ async def main():
     if prediction is not None:
         print(f"Predicted price: {prediction * max(historical_prices):.2f}")
     
-    # Example usage of quantum arbitrage detection
     detector = QuantumArbitrageDetector(n_markets=4)
     
-    # Sample exchange rate matrix
     price_matrix = [
         [1.0, 0.95, 1.05, 0.98],
         [1.05, 1.0, 0.97, 1.02],

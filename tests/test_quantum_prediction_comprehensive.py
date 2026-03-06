@@ -2,10 +2,10 @@
 
 import pytest
 import numpy as np
-from qiskit import QuantumCircuit, execute, Aer
+from qiskit import QuantumCircuit
 from qiskit.circuit import Parameter
-from qiskit.algorithms.optimizers import SPSA
-from examples.quantum_prediction import QuantumPricePredictor
+from qiskit_aer import AerSimulator
+from examples.quantum_prediction import QuantumPricePredictor, run_circuit
 
 @pytest.mark.comprehensive
 class TestQuantumPredictionComprehensive:
@@ -19,7 +19,7 @@ class TestQuantumPredictionComprehensive:
     @pytest.fixture
     def simulator(self):
         """Create quantum simulator."""
-        return Aer.get_backend('aer_simulator')
+        return AerSimulator()
     
     def test_circuit_initialization_detailed(self, predictor):
         """Test detailed circuit initialization."""
@@ -74,19 +74,11 @@ class TestQuantumPredictionComprehensive:
         
         for params in test_params:
             # Bind parameters
-            bound_circuit = predictor.circuit.bind_parameters(
+            bound_circuit = predictor.circuit.assign_parameters(
                 dict(zip(predictor.parameters, params))
             )
             
-            # Execute circuit
-            result = execute(
-                bound_circuit,
-                simulator,
-                shots=1000
-            ).result()
-            
-            # Check counts
-            counts = result.get_counts(bound_circuit)
+            counts = run_circuit(bound_circuit, simulator, shots=1000)
             assert sum(counts.values()) == 1000
             assert all(len(state) == predictor.n_qubits for state in counts.keys())
     

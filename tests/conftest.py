@@ -82,12 +82,16 @@ def pytest_configure(config: pytest.Config) -> None:
 
 @pytest.fixture
 def mock_quantum_circuit(mocker: pytest.FixtureRequest) -> None:
-    """Mock quantum circuit execution."""
-    mocker.patch("qiskit.execute", return_value=mocker.Mock(
-        result=lambda: mocker.Mock(
-            get_counts=lambda: {"00": 500, "11": 500}
-        )
-    ))
+    """Mock quantum circuit execution for Qiskit 2.x."""
+    mock_result = mocker.Mock()
+    mock_result.get_counts.return_value = {"00": 500, "11": 500}
+    mock_backend = mocker.Mock()
+    mock_backend.run.return_value = mocker.Mock(
+        result=lambda: mock_result
+    )
+    mocker.patch("qiskit_aer.AerSimulator", return_value=mock_backend)
+    mocker.patch("examples.quantum_prediction.run_circuit", return_value={"00": 500, "11": 500})
+    mocker.patch("examples.risk_management.run_circuit", return_value={"00": 500, "11": 500})
 
 @pytest.fixture
 def mock_dwave_sampler(mocker: pytest.FixtureRequest) -> None:

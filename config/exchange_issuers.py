@@ -1,17 +1,44 @@
 """
 XRPL Exchange Issuer Addresses Configuration
+
+Issuer addresses and their supported currencies, verified against XRPL mainnet
+via GatewayBalances queries.
 """
 
 EXCHANGE_ISSUERS = {
     "Bitstamp": {
         "address": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
-        "currencies": ["USD", "BTC", "ETH"],
+        "currencies": ["USD", "BTC", "ETH", "EUR", "GBP", "AUD", "CHF", "JPY"],
         "retry_attempts": 3,
-        "retry_delay": 1.0  # seconds
+        "retry_delay": 1.0
     },
     "Gatehub": {
         "address": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
-        "currencies": ["USD", "EUR", "BTC", "ETH"],
+        "currencies": ["USD", "EUR"],
+        "retry_attempts": 3,
+        "retry_delay": 1.0
+    },
+    "GateHub_Five": {
+        "address": "rchGBxcD1A1C2tdxF6papQYZ8kjRKMYcL",
+        "currencies": ["BTC"],
+        "retry_attempts": 3,
+        "retry_delay": 1.0
+    },
+    "Ripple": {
+        "address": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "currencies": ["USD", "CNY"],
+        "retry_attempts": 3,
+        "retry_delay": 1.0
+    },
+    "RippleGateway": {
+        "address": "rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn",
+        "currencies": ["USD"],
+        "retry_attempts": 3,
+        "retry_delay": 1.0
+    },
+    "Bitso": {
+        "address": "rG6FZ31hDHN1K5Dkbma3PSB5uVCuVVRzfn",
+        "currencies": ["BTC", "MXN"],
         "retry_attempts": 3,
         "retry_delay": 1.0
     }

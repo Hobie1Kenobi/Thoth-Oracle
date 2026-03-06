@@ -1,0 +1,20 @@
+{
+  "tokens": {
+    "tUSDC": {
+      "address": "0xfdf623a3A9B20639a3a801B47435c7fEde2E3a14",
+      "decimals": 6
+    },
+    "tWBTC": {
+      "address": "0xcBF6490CEc3948C81Ba1424E2DAE9c17eA53C0d9",
+      "decimals": 8
+    }
+  },
+  "dex": {
+    "address": "0x434094E9609c1564935c34b026ff857AfcEdF6Fb"
+  },
+  "chain": {
+    "id": 1449000,
+    "rpc": "https://rpc.testnet.xrplevm.org"
+  },
+  "deployer": "0x97d6FD76D509c599b2ED8856100DeA09aeEa1484"
+}
